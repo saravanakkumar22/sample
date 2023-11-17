@@ -1,0 +1,20 @@
+<div>
+  <input type="text" placeholder="user Name" [(ngModel)]="lgName"/><br>
+  <input [type]=[passwordType] placeholder="password" [(ngModel)]="password"/><br>
+  <input type="checkbox" id="show" [(ngModel)]="showpswd" (click)="checkbox()"/>
+
+  <button type="button" (click)="checkLogin()">login</button>
+  <button type="button"(click)="redirectToLogin()">register?</button>
+  <div>
+    <div class="card" style="width: 18rem; border: 1px solid;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  {{msg}}
+</div>
